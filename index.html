@@ -30,7 +30,6 @@
 </head>
 <body>
      <!-- topbar section starts  -->
-     <!-- TOP BAR -->
 <div class="top-bar">
     <div class="top-left">
         <div class="info-item">
@@ -127,9 +126,27 @@ function sendviaWhatsapp(){
                     <div class="col-xl-7 col-lg-9">
                         <div class="slider-cont">
                     
-        
-                            <p data-animation="fadeInUp" data-delay="1.1s">
-                                <span style="font-size: 40px;"><strong>L</strong>ions <strong>N</strong>ursery,<strong>P</strong>rimary & <b>J</b>unior <b>H</b>ighschool <b>M</b>eru.<br></span>
+        <style>
+            /* Tablets & small desktops */
+@media (max-width: 1024px) {
+    .single-slider {
+        height: 450px;
+    }
+    
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+    .single-slider {
+        height: 500px; /* neat on mobile */
+        padding-top: 30px; /* remove huge padding */
+    }
+
+}
+
+        </style>
+                            <p class="cauresel-data" data-animation="fadeInUp" data-delay="1.1s">
+                                <span style=" font-size: 40px;"><strong>L</strong>ions <strong>N</strong>ursery,<strong>P</strong>rimary & <b>J</b>unior <b>H</b>ighschool <b>M</b>eru.<br></span>
                                
                          <i>Join us in the journey of discovery, where each day is an opportunity to cultivate knowledge, embrace creativity, and unlock unlimited potential.</i><br> 
                          <a href="/admission.html" class="middle">
