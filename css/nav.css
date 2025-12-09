@@ -77,6 +77,54 @@ hr{
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
   }
+  @media (max-width:769px) {
+    nav {
+        padding: 15px 20px;
+    }
+    nav img {
+        width: 130px;
+    }
+    nav .navigation ul {
+        width: 230px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: -230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: rgba( 17, 20, 104, 0.45);
+        backdrop-filter: blur( 4.5px);
+        -webkit-backdrop-filter: blur( 4.5px);
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+        z-index: 99999;
+        transition: 0.3s ease-in-out;
+    }
+    nav .navigation ul.active {
+        right: 0px;
+    }
+    #menu-close {
+        display: initial;
+        font-size: 1.6rem;
+        padding: 30px 0px 20px 20px;
+        color: #fff;
+    }
+    nav .navigation ul li {
+        padding: 20px 0px 20px 40px;
+        margin-left: 0;
+    }
+    nav .navigation ul li a {
+        color: #fff;
+    }
+    nav .navigation ul li a.blue {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    #menu-btn {
+        display: initial;
+    }
+  }
   section{
     padding: 4rem 7%;
   }
@@ -1713,6 +1761,15 @@ b{
   margin-right: 80px;
   color: #000;
 }
+@media (max-width: 768px) {
+    .word2 {
+        font-size: 14px;
+        padding: 12px 18px;
+        margin: 15px auto;
+        max-width: 90%;
+    }
+}
+
 /* ends */
 footer{
   width: 100%;
